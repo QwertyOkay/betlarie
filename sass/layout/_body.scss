@@ -1,0 +1,52 @@
+body {
+    font-family: "FS Meridian Regular",sans-serif;
+    margin: 0px;
+    color: #fff;
+    letter-spacing: normal;
+}
+
+a {
+    color: #000;
+}
+
+.header__content {
+    display: flex;
+    justify-content: space-around;
+        align-items: center;
+}
+
+.header__menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+    justify-content: center;
+    font-size: medium;
+}
+
+.header__nav:hover {
+text-decoration: none;
+}
+
+.header__items {
+margin-right: 40px;
+}
+
+.header__items:hover {
+text-decoration: none;
+}
+
+.header__links {
+  border-bottom: 1px solid #000;
+}
+
+.main__promo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #9F7F66;
+    color: #FFF;
+    height: 40px;
+    margin-bottom: 10px;
+}
