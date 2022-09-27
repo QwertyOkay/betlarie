@@ -311,6 +311,12 @@ a {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  padding-left: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .header__content {
+    padding-left: 0px;
+  }
 }
 
 .header__menu {
@@ -319,7 +325,12 @@ a {
   align-items: center;
   list-style: none;
   justify-content: center;
-  font-size: medium;
+  font-size: smaller;
+}
+@media screen and (min-width: 1200px) {
+  .header__menu {
+    font-size: medium;
+  }
 }
 
 .header__nav:hover {
@@ -467,6 +478,55 @@ a {
 
 button {
   cursor: pointer;
+}
+
+.hero__section {
+  background-image: url("../../img/hero-mob.avif");
+  height: 80vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+}
+@media screen and (min-width: 1200px) {
+  .hero__section {
+    background-image: url("../../img/hero.avif");
+    height: 80vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+  }
+}
+
+.hero__title {
+  position: absolute;
+  font-size: 48px !important;
+  top: 30%;
+  left: 10%;
+  line-height: 60px;
+  letter-spacing: normal;
+  font-weight: 500;
+}
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    position: absolute;
+    font-size: 48px !important;
+    top: 40%;
+    left: 10%;
+    line-height: 60px;
+    letter-spacing: normal;
+    font-weight: 500;
+  }
+}
+
+.header__logo-img {
+  width: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .header__logo-img {
+    width: auto;
+  }
 }
 
 .modal__backdrop {
