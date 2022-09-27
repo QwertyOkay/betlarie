@@ -226,7 +226,9 @@ button {
     padding: 8px;
     max-width: 1470px;
     font-size: 0.99rem;
+    border-top: solid 2px #979797;
     @media screen and (min-width:1200px) {
         padding: 20px;
+        border-top: solid 2px #979797;
     }
 }
