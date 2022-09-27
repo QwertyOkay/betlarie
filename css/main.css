@@ -460,6 +460,15 @@ a {
   font-size: x-large;
 }
 
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
 .modal__backdrop {
   position: fixed;
   top: 0;
