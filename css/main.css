@@ -349,6 +349,26 @@ a {
   margin-bottom: 10px;
 }
 
+.title__link {
+  font-size: 20px;
+  line-height: 30px;
+  color: #fff;
+  border: aliceblue;
+  border-color: #fff !important;
+  font-family: "FS Meridian Medium", sans-serif;
+  font-weight: 500;
+  text-transform: none;
+  border-bottom: 1px solid;
+  display: inline-block;
+  text-decoration: none;
+  letter-spacing: normal;
+  font-variant-ligatures: no-common-ligatures;
+  cursor: pointer;
+  background-color: transparent;
+  font-weight: 500;
+  text-align: left;
+}
+
 .modal__backdrop {
   position: fixed;
   top: 0;
