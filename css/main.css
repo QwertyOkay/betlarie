@@ -554,6 +554,18 @@ button {
   }
 }
 
+.footer__ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+}
+@media screen and (min-width: 1200px) {
+  .footer__ul {
+    font-size: 1.6rem;
+  }
+}
+
 .modal__backdrop {
   position: fixed;
   top: 0;
