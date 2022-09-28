@@ -1,7 +1,7 @@
 .items__form {
   display: flex;
-  flex-direction: column;
   width: 100%;
+  flex-direction: column;
 }
 @media screen and (min-width: 1200px) {
   .items__form {
@@ -10,28 +10,28 @@
 }
 
 .items__input {
+  border: 1px solid #cecece;
   display: block;
   outline: 0;
-  border: 1px solid #cecece;
   margin-bottom: 30px;
+  transition: 0.3s ease-in-out;
   padding: 10px 20px;
   color: #000;
-  transition: 0.3s ease-in-out;
 }
 
 .items__button {
   padding: 15px 20px;
+  background-color: #000 !important;
   color: #fff;
   font-weight: 600;
-  background-color: #000 !important;
   transition: 0.3s ease-in-out;
+  cursor: pointer;
   border: none;
   background: 0 0;
-  cursor: pointer;
   background-color: rgb(88, 92, 77) !important;
+  font-size: initial;
   transition: 0.3s ease-in-out;
   border: none;
-  font-size: initial;
 }
 
 .items__info {
