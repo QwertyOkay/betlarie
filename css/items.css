@@ -1,0 +1,44 @@
+.items__form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+@media screen and (min-width: 1200px) {
+  .items__form {
+    width: 500px;
+  }
+}
+
+.items__input {
+  display: block;
+  outline: 0;
+  border: 1px solid #cecece;
+  margin-bottom: 30px;
+  padding: 10px 20px;
+  color: #000;
+  transition: 0.3s ease-in-out;
+}
+
+.items__button {
+  padding: 15px 20px;
+  color: #fff;
+  font-weight: 600;
+  background-color: #000 !important;
+  transition: 0.3s ease-in-out;
+  border: none;
+  background: 0 0;
+  cursor: pointer;
+  background-color: rgb(88, 92, 77) !important;
+  transition: 0.3s ease-in-out;
+  border: none;
+  font-size: initial;
+}
+
+.items__info {
+  width: 100%;
+}
+@media screen and (min-width: 1200px) {
+  .items__info {
+    width: 500px;
+  }
+}/*# sourceMappingURL=items.css.map */
