@@ -46,7 +46,7 @@ $overlay-card-color: rgba(33, 150, 243, 0.9);
   }
 
 
-/* .modal__backdrop {
+.modal__backdrop {
     position: fixed;
     top: 0;
     left: 0;
@@ -93,7 +93,7 @@ $overlay-card-color: rgba(33, 150, 243, 0.9);
     text-align: center;
     transform: translate(-50%, -50%) scale(1);
     width: 90%;
-    height: auto;
+    height: 50px;
     padding: 15px 15px 15px 15px;
     background-color: #eeeeee;
     opacity: 1;
@@ -372,7 +372,7 @@ $overlay-card-color: rgba(33, 150, 243, 0.9);
     text-align: center;
     transform: translate(-50%, -50%) scale(1);
     width: 90%;
-    height: auto;
+    height: 50px;
     padding: 15px 15px 0px 15px;
     background-color: var(--main-title-color);
     opacity: 1;
@@ -388,6 +388,7 @@ $overlay-card-color: rgba(33, 150, 243, 0.9);
     }
     @media screen and (min-width: 1200px) {
     width: 528px;
+    height: 50px;
 }
 }
 
@@ -775,7 +776,7 @@ $overlay-card-color: rgba(33, 150, 243, 0.9);
 .modal__close {
     margin-bottom: 5px;
     text-transform: uppercase;
-    color: brown;
+    color: #3c3027!important;
 }  
 
 
