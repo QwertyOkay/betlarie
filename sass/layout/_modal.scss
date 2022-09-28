@@ -153,10 +153,8 @@ $overlay-card-color: rgba(33, 150, 243, 0.9);
     width: 90%;
     height: auto;
     padding: 40px;
-    background-color: var(--main-title-color);
-    opacity: 1;
-    border-radius: 6px;
-    -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    background-color: #f6f6f4ed;
+    opacity: 1;    -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 
     transition-property: opacity, transform;
@@ -214,7 +212,6 @@ $overlay-card-color: rgba(33, 150, 243, 0.9);
     width: 90%;
     height: 40px;
     border: 1px solid rgb(60 48 39);
-    border-radius: 4px;
     padding-left: 42px;
     transition-property: border;
     transition-duration: 250ms;
@@ -596,7 +593,6 @@ $overlay-card-color: rgba(33, 150, 243, 0.9);
     width: 90%;
     height: 40px;
     border: 1.5px solid rgb(60 48 39);
-    border-radius: 4px;
     padding-left: 42px;
     transition-property: border;
     transition-duration: 250ms;
@@ -646,7 +642,6 @@ $overlay-card-color: rgba(33, 150, 243, 0.9);
     color: #000;
     border: 1.5px solid rgb(60 48 39);
     box-sizing: border-box;
-    border-radius: 4px;
     transition-property: border-color;
     transition-duration: $duration;
     transition-timing-function: $function;
@@ -734,7 +729,7 @@ $overlay-card-color: rgba(33, 150, 243, 0.9);
     padding: 10px 29px;
     height: 50px;
     color: #fff;
-    background-color: #3c3027;
+    background-color: #9f7f66;
     font-weight: 200;
     font-size: large;
     line-height: 1.87;
@@ -760,6 +755,16 @@ $overlay-card-color: rgba(33, 150, 243, 0.9);
         font-size: 12px;
         width: 100%;
         // left: 0;
+}
+
+.modal__hero-text4 {
+        padding: 10px;
+        color: #000;
+        font-size: 12px;
+        width: 100%;
+        @media screen and (min-width:1200px) {
+            font-size: 17px;
+        }
 }
 
 .modal__link-btn {
@@ -798,6 +803,72 @@ $overlay-card-color: rgba(33, 150, 243, 0.9);
     color: brown;
 } 
 
+//----------Modal 1 --------------//
+
+.modal__backdrop1 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 101;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.62);
+    opacity: 1;
+    visibility: visible;
+    transition-property: opacity, visibility;
+    transition-duration: $duration;
+    transition-timing-function: $function;
+}
+
+.modal__backdrop1.is-hidden1 {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.modal__backdrop1.is-hidden1>.modal1 {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(2.9);
+}
+
+.modal1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%) scale(1);
+    height: 90vh;
+    width: 90vw;
+    height: auto;
+    padding: 15px 15px 0px 15px;
+    background-color: #f6f6f4ed;
+    opacity: 1;
+        -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+
+    transition-property: opacity, transform;
+    transition-duration: var(--duration);
+    transition-timing-function: var(--function);
+
+    @media screen and (min-width: 480px) {
+        height: 90vh;
+        width: 90vw;
+    }
+    @media screen and (min-width: 1200px) {
+        height: 90vh;
+        width: 90vw;
+}
+}
+
+.modal__close1 {
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    display: block;
+    color: brown;
+    margin-top: 20px;
+}  
+
+//----------Modal 2 --------------//
 
 .modal__backdrop2 {
     position: fixed;
@@ -820,7 +891,7 @@ $overlay-card-color: rgba(33, 150, 243, 0.9);
     pointer-events: none;
 }
 
-.modal__backdrop2.is-hidden2>.modal2 {
+.modal__backdrop2.is-hidden4>.modal2 {
     opacity: 0;
     transform: translate(-50%, -50%) scale(2.9);
 }
@@ -831,40 +902,41 @@ $overlay-card-color: rgba(33, 150, 243, 0.9);
     left: 50%;
     text-align: center;
     transform: translate(-50%, -50%) scale(1);
-    width: 90%;
+    height: 90vh;
+    width: 90vw;
     height: auto;
     padding: 15px 15px 0px 15px;
-    background-color: var(--main-title-color);
+    background-color: #f6f6f4ed;
     opacity: 1;
-    border-radius: 6px;
-    -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+        -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-
 
     transition-property: opacity, transform;
     transition-duration: var(--duration);
     transition-timing-function: var(--function);
 
     @media screen and (min-width: 480px) {
-        width: 354px;
-        // height: 609px;
+        height: 90vh;
+        width: 90vw;
     }
-
     @media screen and (min-width: 1200px) {
-    width: 528px;
+        height: 90vh;
+        width: 90vw;
 }
 }
 
 .modal__close2 {
-    margin-bottom: 14px;
+    margin-bottom: 10px;
     text-transform: uppercase;
-    display: inline-block;
+    display: block;
     color: brown;
-    margin-top: 11px;
+    margin-top: 20px;
 }  
 
 
+
 // Modal#3 //
+
 
 .modal__backdrop3 {
     position: fixed;
@@ -887,7 +959,7 @@ $overlay-card-color: rgba(33, 150, 243, 0.9);
     pointer-events: none;
 }
 
-.modal__backdrop3.is-hidden3>.modal3 {
+.modal__backdrop3.is-hidden4>.modal3 {
     opacity: 0;
     transform: translate(-50%, -50%) scale(2.9);
 }
@@ -898,13 +970,13 @@ $overlay-card-color: rgba(33, 150, 243, 0.9);
     left: 50%;
     text-align: center;
     transform: translate(-50%, -50%) scale(1);
-    width: 90%;
+    height: 90vh;
+    width: 90vw;
     height: auto;
     padding: 15px 15px 0px 15px;
-    background-color: var(--main-title-color);
+    background-color: #f6f6f4ed;
     opacity: 1;
-    border-radius: 6px;
-    -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+        -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 
     transition-property: opacity, transform;
@@ -912,11 +984,12 @@ $overlay-card-color: rgba(33, 150, 243, 0.9);
     transition-timing-function: var(--function);
 
     @media screen and (min-width: 480px) {
-        width: 354px;
-        // height: 609px;
+        height: 90vh;
+        width: 90vw;
     }
     @media screen and (min-width: 1200px) {
-    width: 528px;
+        height: 90vh;
+        width: 90vw;
 }
 }
 
@@ -927,6 +1000,13 @@ $overlay-card-color: rgba(33, 150, 243, 0.9);
     color: brown;
     margin-top: 20px;
 }  
+
+.modal4__pad {
+    padding: 10px;
+    @media screen and (min-width:1200px) {
+        padding: 72px;
+    }
+}
 
 
 // Modal#4 (Privacy Policy) //
@@ -963,13 +1043,13 @@ $overlay-card-color: rgba(33, 150, 243, 0.9);
     left: 50%;
     text-align: center;
     transform: translate(-50%, -50%) scale(1);
-    width: 90%;
+    height: 90vh;
+    width: 90vw;
     height: auto;
     padding: 15px 15px 0px 15px;
-    background-color: var(--main-title-color);
+    background-color: #f6f6f4ed;
     opacity: 1;
-    border-radius: 6px;
-    -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+        -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 
     transition-property: opacity, transform;
@@ -977,11 +1057,12 @@ $overlay-card-color: rgba(33, 150, 243, 0.9);
     transition-timing-function: var(--function);
 
     @media screen and (min-width: 480px) {
-        width: 354px;
-        // height: 609px;
+        height: 90vh;
+        width: 90vw;
     }
     @media screen and (min-width: 1200px) {
-    width: 528px;
+        height: 90vh;
+        width: 90vw;
 }
 }
 
@@ -992,6 +1073,13 @@ $overlay-card-color: rgba(33, 150, 243, 0.9);
     color: brown;
     margin-top: 20px;
 }  
+
+.modal4__pad {
+    padding: 10px;
+    @media screen and (min-width:1200px) {
+        padding: 72px;
+    }
+}
 
 // -------------------------------------------- //
 
@@ -1052,10 +1140,8 @@ $overlay-card-color: rgba(33, 150, 243, 0.9);
     width: 80%;
     height: auto;
     padding: 40px;
-    background-color: #f6f6f4;
-    opacity: 1;
-    border-radius: 6px;
-    -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    background-color: #f6f6f4ed;
+    opacity: 1;    -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 
     transition-property: opacity, transform;
@@ -1083,7 +1169,7 @@ $overlay-card-color: rgba(33, 150, 243, 0.9);
     margin-top: 0;
     margin-bottom: 12px;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 22px;
     line-height: 1.5;
     text-align: center;
     letter-spacing: .03em;
